@@ -1,0 +1,48 @@
+.pageHero {
+  padding-top: 128px;
+  padding-bottom: 80px;
+  background: #293a4b;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.eyebrow {
+  color: #97bcc7;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+.heroBody {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.125rem;
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.phoneLink {
+  color: #97bcc7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.phoneLink:hover {
+  color: #ffffff;
+}

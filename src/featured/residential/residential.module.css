@@ -1,0 +1,66 @@
+.servicesSection {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.groupTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #293a4b;
+  margin-bottom: 16px;
+  border-left: 4px solid #006884;
+  padding-left: 16px;
+}
+
+.groupTitleSecondary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #293a4b;
+  margin-bottom: 16px;
+  border-left: 4px solid #97bcc7;
+  padding-left: 16px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(20, 55, 86, 0.8);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #97bcc7;
+  flex-shrink: 0;
+}
+
+.dotWarm {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #bfa76a;
+  flex-shrink: 0;
+}

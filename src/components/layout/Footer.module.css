@@ -1,0 +1,152 @@
+.footer {
+  background: #1a2837;
+  color: #ffffff;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Brand column */
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logoImage {
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px rgba(151, 188, 199, 0.4);
+}
+
+.brandName {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brandSub {
+  color: #97bcc7;
+  font-size: 0.875rem;
+}
+
+.brandDesc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.socialLink {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 200ms;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.socialLink:hover {
+  color: #97bcc7;
+}
+
+/* Links column */
+.colTitle {
+  font-weight: 600;
+  color: #97bcc7;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  transition: color 200ms;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+/* Service area column */
+.serviceAreaDesc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Bottom bar */
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottomInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .bottomInner {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+}

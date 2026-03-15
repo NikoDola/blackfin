@@ -1,0 +1,167 @@
+.section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.light {
+  background: #ffffff;
+}
+
+.dark {
+  background: #293a4b;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    flex-direction: row;
+  }
+
+  .innerReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Image */
+.imageWrap {
+  width: 100%;
+  position: relative;
+  height: 288px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .imageWrap {
+    height: 384px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageWrap {
+    width: 50%;
+  }
+}
+
+.imageParallax {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  bottom: -10%;
+  left: -10%;
+  will-change: transform;
+}
+
+.imageBg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text */
+.textWrap {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .textWrap {
+    width: 50%;
+  }
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.tagLight {
+  color: #006884;
+}
+
+.tagDark {
+  color: #97bcc7;
+}
+
+.headline {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 2.25rem;
+  }
+}
+
+.headlineLight {
+  color: #293a4b;
+}
+
+.headlineDark {
+  color: #ffffff;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: 20px;
+}
+
+.bodyLight {
+  color: rgba(20, 55, 86, 0.7);
+}
+
+.bodyDark {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #97bcc7;
+  flex-shrink: 0;
+}
+
+.listText {
+  font-size: 0.875rem;
+}
+
+.listTextLight {
+  color: rgba(20, 55, 86, 0.8);
+}
+
+.listTextDark {
+  color: rgba(255, 255, 255, 0.8);
+}
