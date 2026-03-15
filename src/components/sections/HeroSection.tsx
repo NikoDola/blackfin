@@ -14,6 +14,7 @@ interface HeroSectionProps {
 export function HeroSection({ slides }: HeroSectionProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [current, setCurrent] = useState(0);
+  const [timerKey, setTimerKey] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,13 +27,15 @@ export function HeroSection({ slides }: HeroSectionProps) {
     if (slides.length <= 1) return;
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, [slides.length, timerKey]);
 
-  const goTo = (index: number) => setCurrent(index);
-  const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
-  const next = () => setCurrent((c) => (c + 1) % slides.length);
+  const resetTimer = () => setTimerKey((k) => k + 1);
+
+  const goTo = (index: number) => { setCurrent(index); resetTimer(); };
+  const prev = () => { setCurrent((c) => (c - 1 + slides.length) % slides.length); resetTimer(); };
+  const next = () => { setCurrent((c) => (c + 1) % slides.length); resetTimer(); };
 
   const slide = slides[current];
 
