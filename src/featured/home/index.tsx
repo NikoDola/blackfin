@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const heroSlides = [
   {
-    image: "/images/hero-bg.png",
+    image: "/images/hero-bg.webp",
     headline: "Tampa Bay's Finest Painting & Remodeling",
     subheadline:
       "Leverage our years of proven experience to make your residential or commercial project the best it can be.",
