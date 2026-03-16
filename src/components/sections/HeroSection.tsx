@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence, type Easing } from "framer-motion";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { HeroSlide } from "@/types";
@@ -66,12 +67,16 @@ export function HeroSection({ slides }: HeroSectionProps) {
             exit="exit"
             transition={{ duration: 1.0, ease: "easeInOut" }}
             className={styles.bgSlide}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
+          >
+            <Image
+              src={slide.image}
+              alt={slide.headline}
+              fill
+              className={styles.bgImg}
+              sizes="100vw"
+              priority={current === 0}
+            />
+          </motion.div>
         </AnimatePresence>
       </motion.div>
 

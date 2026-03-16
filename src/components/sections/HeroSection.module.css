@@ -23,6 +23,11 @@
   left: 0;
 }
 
+.bgImg {
+  object-fit: cover;
+  object-position: center;
+}
+
 /* Overlay */
 .overlay {
   position: absolute;
@@ -159,19 +164,23 @@
   width: 8px;
   border-radius: 9999px;
   transition: all 300ms;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 18px;
+  box-sizing: content-box;
+  background-clip: content-box;
 }
 
 .dot:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
+  background-clip: content-box;
 }
 
 .dotActive {
   width: 32px;
   background: #97bcc7;
+  background-clip: content-box;
 }
 
 /* Scroll indicator */
@@ -199,7 +208,7 @@
 }
 
 .scrollText {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   transform: rotate(90deg);

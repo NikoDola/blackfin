@@ -87,7 +87,10 @@
   font-weight: 500;
   transition: color 200ms, background 200ms;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .navLink:hover {
@@ -122,6 +125,8 @@
   font-weight: 500;
   transition: color 200ms;
   text-decoration: none;
+  min-height: 44px;
+  padding: 0 4px;
 }
 
 .phoneLink:hover {
@@ -132,10 +137,14 @@
 .hamburger {
   display: flex;
   color: #ffffff;
-  padding: 8px;
+  padding: 10px;
   background: none;
   border: none;
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -175,7 +184,10 @@
   font-weight: 500;
   transition: color 200ms, background 200ms;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .mobileNavLink:hover {

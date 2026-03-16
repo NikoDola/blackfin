@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import styles from "./ParallaxImageSection.module.css";
 
@@ -43,11 +44,12 @@ export function ParallaxImageSection({
         {/* Image with parallax */}
         <div className={styles.imageWrap}>
           <motion.div style={{ y: imageY }} className={styles.imageParallax}>
-            <div
+            <Image
+              src={image}
+              alt={headline}
+              fill
               className={styles.imageBg}
-              style={{
-                backgroundImage: `url(${image})`,
-              }}
+              sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </motion.div>
         </div>
